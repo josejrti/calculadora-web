@@ -66,6 +66,9 @@ button {
 button:hover {
     background-color: var(--fifth-color);
 }
+button:active {
+    background-color: #333;
+}
 .calc .calc-buttons .zero-button{
     grid-column: 1 / 3;
 }

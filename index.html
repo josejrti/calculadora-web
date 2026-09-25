@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <meta name="description" content="Projeto de Calculadora Web simples que realiza as quatro operações básicas da matemática.">
+    <meta name="keywords" content="calculadora, calculo, matemática, adição, divisão, multiplicação, subtração">
+    <meta name="author" content="José Júnior">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.svg">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <main>
+        <div class="calc">
+            <input type="text" id="calc-display" placeholder="0" value="" disabled>
+            <div class="calc-buttons">
+                <button onclick="ApagarDisplay()">AC</button>
+                <button onclick="ApagarCaractere()"><</button>
+                <button onclick="AdicionarCaractere('/')">/</button>
+                <button onclick="AdicionarCaractere('*')">*</button>
+                <button onclick="AdicionarCaractere('7')">7</button>
+                <button onclick="AdicionarCaractere('8')">8</button>
+                <button onclick="AdicionarCaractere('9')">9</button>
+                <button onclick="AdicionarCaractere('-')">-</button>
+                <button onclick="AdicionarCaractere('4')">4</button>
+                <button onclick="AdicionarCaractere('5')">5</button>
+                <button onclick="AdicionarCaractere('6')">6</button>
+                <button onclick="AdicionarCaractere('+')">+</button>
+                <button onclick="AdicionarCaractere('1')">1</button>
+                <button onclick="AdicionarCaractere('2')">2</button>
+                <button onclick="AdicionarCaractere('3')">3</button>
+                <button onclick="AdicionarCaractere('0')" class="zero-button">0</button>
+                <button onclick="AdicionarCaractere('.')">.</button>
+                <button onclick="Calcular()" class="calc-button">=</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por José Júnior - 2026</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
